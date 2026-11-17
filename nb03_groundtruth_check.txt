@@ -1,0 +1,10 @@
+hours_stock_status agreement with stock_hour6_22_cnt: {0: np.float64(0.0248), 1: np.float64(1.0)} -> OOS value = 1
+sum(hours_sale)/sale_amount: median 1.000, IQR [1.000, 1.000]
+rows with OOS flag outside 06-22 (ignored): 0.586
+series-days with any stockout hour (6-22): 0.443; with >=4 h: 0.350
+per-series stockout-day share: {'count': 50000.0, 'mean': 0.443, 'std': 0.148, 'min': 0.056, '10%': 0.278, '25%': 0.344, '50%': 0.422, '75%': 0.522, '90%': 0.644, 'max': 1.0}
+series with 0 stockout days: 0 of 50000
+hourly recon: 15933 stockout days, fallback to median on 7242 (45.5%); uplift demand/sales on stockout days with sales: median 1.57, p90 4.00
+ground truth: 1000 series x 90 days; stockout share mean 0.177; bins 0-5/5-10/10-20%: [0, 7, 993]
+  median vs hourly on reconstructed days: ratio of means 0.74; corr 0.84
+  p80 vs hourly on reconstructed days: ratio of means 1.16; corr 0.75

@@ -1,0 +1,11 @@
+# analysis scripts and notebooks 01-02 (CPU)
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+openpyxl>=3.1
+pyarrow>=14
+huggingface_hub>=0.23
+# notebooks 03-04 (GPU), versions used in the paper
+chronos-forecasting==2.3.2
+timesfm[torch]==3.0.2
+tirex-ts==1.4.2

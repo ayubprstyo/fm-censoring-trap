@@ -1,0 +1,14 @@
+series: 599, weeks: 165
+share of active weeks out of stock: 0.044
+  2021: 0.080
+  2022: 0.060
+  2023: 0.024
+  2024: 0.006
+OOS weeks with zero sales: 4012 of 4012
+P(OOS t+1 | OOS t) = 0.66, P(OOS t+1 | in stock t) = 0.02
+share of active weeks with zero sales: 0.387
+clean series (<=2% OOS, >=2y): 271; median of mean weekly sales: 1.22
+oracle {'cost': np.float64(27926.0), 'holding': np.float64(19151.0), 'shortage': np.float64(8775.0), 'fill': np.float64(0.862)}
+naive {'cost': np.float64(26715.0), 'holding': np.float64(16278.0), 'shortage': np.float64(10437.0), 'fill': np.float64(0.836)}
+masked {'cost': np.float64(26378.0), 'holding': np.float64(15711.0), 'shortage': np.float64(10667.0), 'fill': np.float64(0.832)}
+naive vs oracle: shortage +18.9%, fill -2.6 pts, total cost -4.3%
