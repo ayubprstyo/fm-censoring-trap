@@ -14,8 +14,13 @@ When an item sells out, recorded sales understate demand. A replenishment policy
 | Foundation models learning from own sales vs. own oracle | +38 to +47% | +12 to +15% | +7 to +14% |
 | Foundation models (naive) vs. empirical policy (naive) | +21 to +29% | −10 to −13% | −21 to −26% |
 | Chronos-2 with stockout covariate vs. Kaplan-Meier | +28.5% | +1.0% | −11.4% |
+| Tobit (censored normal, 28 d) vs. empirical oracle | +1.2% | +1.3% | +5.6% |
+| Chronos-2 with stockout covariate vs. Tobit | +28.4% | +5.7% | −2.9% |
+| Foundation models (naive) vs. empirical (naive), both 28-day context | +19 to +36% | −9 to −13% | −21 to −27% |
 
-All intervals (paired bootstrap, 2,000 resamples) exclude zero; see `results/numbers.json`.
+All intervals (paired bootstrap, 2,000 resamples) exclude zero; see `results/numbers.json` and `results/nb05/nb05_numbers.json`.
+
+The robustness run (notebook 05) shows that the reversal across critical ratios is not caused by the longer context of the foundation models, and that a Tobit policy is a much stronger classical benchmark than Kaplan-Meier at high critical ratios.
 
 ## Repository layout
 
@@ -25,13 +30,17 @@ notebooks/
   02_pilot_freshretailnet.py         go/no-go pilot on FreshRetailNet-50K, empirical policies (CPU)
   03_fm_loop_median_groundtruth.py   first full run with foundation models, median-filled ground truth (GPU)
   04_fm_loop_hourly_groundtruth.py   PRIMARY ANALYSIS: hourly-based ground truth, trajectories, NaN diagnostic (GPU)
+  05_robustness_context_tobit.py     robustness: equal 28-day vs full-history context for all forecasters,
+                                     and a Tobit (censored-normal, EM) baseline (GPU)
   *.ipynb                            the same notebooks in Jupyter format (converted with jupytext)
 analysis/
   compute_numbers.py                 paired contrasts and CIs for Tables 3, 4 and 6 -> results/numbers.json
+  compute_nb05.py                    robustness contrasts for Table 7 -> results/nb05/nb05_numbers.json
   make_figures.py                    Figures 1-3 (300 dpi) and Figures_data_Excel.xlsx
 results/
   nb03/                              output of notebook 04 (primary analysis)
   nb02/                              output of notebook 03 (superseded, kept for transparency)
+  nb05/                              output of notebook 05 (robustness, Table 7)
   numbers.json                       numbers used in the paper
   vn2_check_output.txt               output of notebook 01
 figures/                             Fig1-Fig3 and the Excel workbook
@@ -39,7 +48,7 @@ figures/                             Fig1-Fig3 and the Excel workbook
 
 ## Reproducing the results
 
-**Notebooks 03 and 04** were run on Kaggle (GPU T4 x1, Internet on). Create a notebook, paste the script, and select *Run All*. Notebook 04 installs its own packages and takes about 60-90 minutes; outputs are written to `/kaggle/working`. Both notebooks have a mock mode for a quick local test without data or models: `NB03_MOCK=1 python notebooks/04_fm_loop_hourly_groundtruth.py` (and `NB02_MOCK=1` for notebook 03).
+**Notebooks 03, 04 and 05** were run on Kaggle (GPU T4 x1, Internet on). Create a notebook, paste the script, and select *Run All*. Notebook 04 installs its own packages and takes about 60-90 minutes; outputs are written to `/kaggle/working`. Both notebooks have a mock mode for a quick local test without data or models: `NB03_MOCK=1 python notebooks/04_fm_loop_hourly_groundtruth.py` (`NB02_MOCK=1` for notebook 03, `NB05_MOCK=1` for notebook 05).
 
 **Notebook 02** runs on CPU in a few minutes with internet access to Hugging Face.
 
@@ -56,6 +65,7 @@ python notebooks/01_vn2_censoring_check.py --vn2 VN2/Data
 pip install -r requirements.txt
 python analysis/compute_numbers.py --results results/nb03 --out results/numbers.json
 python analysis/make_figures.py --results results/nb03 --out figures
+python analysis/compute_nb05.py results
 ```
 
 ## Versions used

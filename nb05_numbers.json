@@ -1,0 +1,353 @@
+{
+ "0.5": {
+  "chronos2|naive28_vs_empnaive": [
+   35.5,
+   32.6,
+   38.4
+  ],
+  "chronos2|naive_vs_empnaivefull": [
+   28.7,
+   25.9,
+   31.9
+  ],
+  "chronos2|trap28": [
+   53.3,
+   50.3,
+   56.8
+  ],
+  "chronos2|naive_vs_tobit": [
+   42.5,
+   39.5,
+   46.0
+  ],
+  "timesfm25|naive28_vs_empnaive": [
+   19.4,
+   18.1,
+   20.8
+  ],
+  "timesfm25|naive_vs_empnaivefull": [
+   20.6,
+   19.1,
+   22.3
+  ],
+  "timesfm25|trap28": [
+   35.2,
+   33.2,
+   37.1
+  ],
+  "timesfm25|naive_vs_tobit": [
+   33.6,
+   31.8,
+   35.5
+  ],
+  "tirex|naive28_vs_empnaive": [
+   30.6,
+   28.7,
+   32.7
+  ],
+  "tirex|naive_vs_empnaivefull": [
+   28.5,
+   26.0,
+   31.3
+  ],
+  "tirex|trap28": [
+   46.3,
+   44.0,
+   48.6
+  ],
+  "tirex|naive_vs_tobit": [
+   42.3,
+   39.8,
+   45.1
+  ],
+  "chronos2|cov_vs_tobit": [
+   28.4,
+   26.6,
+   30.3
+  ],
+  "chronos2|cov_vs_km": [
+   28.5,
+   26.7,
+   30.4
+  ],
+  "tobit_vs_oracle": [
+   1.2,
+   1.0,
+   1.4
+  ],
+  "tobit_vs_km": [
+   0.1,
+   -0.2,
+   0.4
+  ],
+  "tobit_vs_naive": [
+   -9.8,
+   -10.9,
+   -8.7
+  ],
+  "empnaivefull_trap": [
+   8.7,
+   7.8,
+   9.6
+  ],
+  "vsEMPor": {
+   "EMP|km": 1.1,
+   "EMP|km_full": 3.4,
+   "EMP|masked": 23.4,
+   "EMP|naive": 12.2,
+   "EMP|naive_full": 12.1,
+   "EMP|oracle": 0.0,
+   "EMP|oracle_full": 3.1,
+   "EMP|tobit": 1.2,
+   "EMP|tobit_full": 8.1,
+   "chronos2|cov": 30.0,
+   "chronos2|cov_28": 40.2,
+   "chronos2|naive": 44.2,
+   "chronos2|naive_28": 52.0,
+   "chronos2|oracle": -1.5,
+   "chronos2|oracle_28": -0.9,
+   "timesfm25|naive": 35.2,
+   "timesfm25|naive_28": 34.0,
+   "timesfm25|oracle": -2.3,
+   "timesfm25|oracle_28": -0.9,
+   "tirex|naive": 44.1,
+   "tirex|naive_28": 46.6,
+   "tirex|oracle": -1.3,
+   "tirex|oracle_28": 0.2
+  }
+ },
+ "0.8": {
+  "chronos2|naive28_vs_empnaive": [
+   -10.5,
+   -11.6,
+   -9.4
+  ],
+  "chronos2|naive_vs_empnaivefull": [
+   -10.4,
+   -11.8,
+   -9.1
+  ],
+  "chronos2|trap28": [
+   13.8,
+   12.4,
+   15.2
+  ],
+  "chronos2|naive_vs_tobit": [
+   8.7,
+   7.7,
+   9.8
+  ],
+  "timesfm25|naive28_vs_empnaive": [
+   -8.9,
+   -10.0,
+   -7.8
+  ],
+  "timesfm25|naive_vs_empnaivefull": [
+   -11.6,
+   -12.8,
+   -10.4
+  ],
+  "timesfm25|trap28": [
+   17.3,
+   16.1,
+   18.6
+  ],
+  "timesfm25|naive_vs_tobit": [
+   7.3,
+   6.5,
+   8.2
+  ],
+  "tirex|naive28_vs_empnaive": [
+   -12.8,
+   -13.9,
+   -11.7
+  ],
+  "tirex|naive_vs_empnaivefull": [
+   -12.8,
+   -14.0,
+   -11.5
+  ],
+  "tirex|trap28": [
+   9.1,
+   7.5,
+   10.7
+  ],
+  "tirex|naive_vs_tobit": [
+   5.9,
+   4.9,
+   6.9
+  ],
+  "chronos2|cov_vs_tobit": [
+   5.7,
+   4.7,
+   6.7
+  ],
+  "chronos2|cov_vs_km": [
+   1.0,
+   0.2,
+   1.8
+  ],
+  "tobit_vs_oracle": [
+   1.3,
+   0.8,
+   1.8
+  ],
+  "tobit_vs_km": [
+   -4.4,
+   -5.3,
+   -3.6
+  ],
+  "tobit_vs_naive": [
+   -17.4,
+   -18.7,
+   -16.1
+  ],
+  "empnaivefull_trap": [
+   17.0,
+   15.4,
+   18.4
+  ],
+  "vsEMPor": {
+   "EMP|km": 6.0,
+   "EMP|km_full": 6.6,
+   "EMP|masked": 38.3,
+   "EMP|naive": 22.7,
+   "EMP|naive_full": 23.0,
+   "EMP|oracle": 0.0,
+   "EMP|oracle_full": 5.1,
+   "EMP|tobit": 1.3,
+   "EMP|tobit_full": 9.0,
+   "chronos2|cov": 7.1,
+   "chronos2|cov_28": 8.3,
+   "chronos2|naive": 10.2,
+   "chronos2|naive_28": 9.8,
+   "chronos2|oracle": -4.2,
+   "chronos2|oracle_28": -3.5,
+   "timesfm25|naive": 8.7,
+   "timesfm25|naive_28": 11.8,
+   "timesfm25|oracle": -4.9,
+   "timesfm25|oracle_28": -4.7,
+   "tirex|naive": 7.3,
+   "tirex|naive_28": 7.0,
+   "tirex|oracle": -3.9,
+   "tirex|oracle_28": -1.9
+  }
+ },
+ "0.9": {
+  "chronos2|naive28_vs_empnaive": [
+   -26.6,
+   -28.2,
+   -24.8
+  ],
+  "chronos2|naive_vs_empnaivefull": [
+   -24.0,
+   -25.7,
+   -22.4
+  ],
+  "chronos2|trap28": [
+   4.6,
+   3.5,
+   5.8
+  ],
+  "chronos2|naive_vs_tobit": [
+   0.1,
+   -1.2,
+   1.5
+  ],
+  "timesfm25|naive28_vs_empnaive": [
+   -21.1,
+   -22.8,
+   -19.2
+  ],
+  "timesfm25|naive_vs_empnaivefull": [
+   -21.4,
+   -23.1,
+   -19.7
+  ],
+  "timesfm25|trap28": [
+   14.2,
+   13.0,
+   15.3
+  ],
+  "timesfm25|naive_vs_tobit": [
+   3.5,
+   2.7,
+   4.3
+  ],
+  "tirex|naive28_vs_empnaive": [
+   -27.3,
+   -29.0,
+   -25.6
+  ],
+  "tirex|naive_vs_empnaivefull": [
+   -26.3,
+   -27.9,
+   -24.6
+  ],
+  "tirex|trap28": [
+   2.2,
+   0.7,
+   3.8
+  ],
+  "tirex|naive_vs_tobit": [
+   -2.9,
+   -4.0,
+   -1.7
+  ],
+  "chronos2|cov_vs_tobit": [
+   -2.9,
+   -3.7,
+   -2.0
+  ],
+  "chronos2|cov_vs_km": [
+   -11.4,
+   -13.2,
+   -9.7
+  ],
+  "tobit_vs_oracle": [
+   5.6,
+   4.7,
+   6.4
+  ],
+  "tobit_vs_km": [
+   -8.8,
+   -10.5,
+   -7.1
+  ],
+  "tobit_vs_naive": [
+   -23.9,
+   -25.5,
+   -22.2
+  ],
+  "empnaivefull_trap": [
+   32.7,
+   29.8,
+   35.6
+  ],
+  "vsEMPor": {
+   "EMP|km": 15.8,
+   "EMP|km_full": 12.9,
+   "EMP|masked": 65.6,
+   "EMP|naive": 38.7,
+   "EMP|naive_full": 39.1,
+   "EMP|oracle": 0.0,
+   "EMP|oracle_full": 4.8,
+   "EMP|tobit": 5.6,
+   "EMP|tobit_full": 14.6,
+   "chronos2|cov": 2.6,
+   "chronos2|cov_28": 1.4,
+   "chronos2|naive": 5.7,
+   "chronos2|naive_28": 1.8,
+   "chronos2|oracle": -4.0,
+   "chronos2|oracle_28": -2.6,
+   "timesfm25|naive": 9.3,
+   "timesfm25|naive_28": 9.4,
+   "timesfm25|oracle": -3.8,
+   "timesfm25|oracle_28": -4.2,
+   "tirex|naive": 2.5,
+   "tirex|naive_28": 0.8,
+   "tirex|oracle": -3.9,
+   "tirex|oracle_28": -1.3
+  }
+ }
+}
